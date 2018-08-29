@@ -1,15 +1,19 @@
 
+
 <div class="classInnerContainer">
   <ul>
     <li *ngFor = "let cloth of wClothing">
       <div class="col-md-3 classCard1" *ngFor = "let fWear of cloth.western_wear" style="width: 23%;height:370px;margin-bottom: 10px;">
             <div class="classImage">
-                <img [src]='fWear.imgUrl' alt="Avatar" [ngStyle]="{'width':'180px','height':'250px'}">
+                <img [src]='fWear.imgUrl' alt="Avatar" [ngStyle]="imgStyle">
             </div>
-            <div class="classContainer">
+            <div [ngClass]="'classContainer'" [ngSwitch]="fWear.stock">
               <div><a href= '#'>{{fWear.product_name}}</a></div>
               <div class="classPrice">{{fWear.price | currency:'INR'}}</div>
               <div class="classRetailPrice">{{fWear.retail_price | currency:'INR'}}</div>
+              <div *ngSwitchCase="'In stock'" style="color:blue;">In stock</div>
+              <div *ngSwitchCase="'Out of stock'" style="color:red;">Out of stock</div>
+              <div *ngSwitchDefault>Nothing found</div>
             </div>
       </div>
       &nbsp;
@@ -22,9 +26,9 @@
     <li *ngFor = "let cloth of wClothing">
       <div class="col-md-3 classCard1" *ngFor = "let eWear of cloth.ethnic_wear" style="width: 23%;height:370px;margin-bottom: 10px;">
         <div class="classImage">
-            <img [src]='eWear.imgUrl' alt="Avatar" [ngStyle]="{'width':'180px','height':'250px'}">
+            <img [src]='eWear.imgUrl' alt="Avatar" [ngStyle]="imgStyle">
         </div>
-        <div class="classContainer">
+        <div [ngClass]="'classContainer'">
           <div class="classProductName"><a href= '#'>{{eWear.product_name}}</a></div>
           <div class="classPrice">{{eWear.price | currency:'INR'}}</div>
           <div class="classRetailPrice">{{eWear.retail_price | currency:'INR'}}</div>

@@ -12,22 +12,26 @@ export class WomenComponent implements OnInit {
                       { 'product_name': 'BIBA Straight Cotton Kurta',
                         'price': 499,
                         'retail_price': 999,
-                        'imgUrl': './assets/womens_clothing/western/img1.jpg'
+                        'imgUrl': './assets/womens_clothing/western/img1.jpg',
+                        'stock': 'In stock'
                       },
                       { 'product_name': 'Styleville.in Floral Regular Fit Top',
                         'price': 479,
                         'retail_price': 1999,
-                        'imgUrl': './assets/womens_clothing/western/img2.jpg'
+                        'imgUrl': './assets/womens_clothing/western/img2.jpg',
+                        'stock': 'Out of stock'
                       },
                       { 'product_name': 'AKA CHIC Body Blouse Shirt',
                         'price': 638,
                         'retail_price': 1599,
-                        'imgUrl': './assets/womens_clothing/western/img3.jpg'
+                        'imgUrl': './assets/womens_clothing/western/img3.jpg',
+                        'stock': 'Out of stock'
                       },
                       { 'product_name': 'Symbol Amazon Brand Jumpsuit',
                         'price': 599,
                         'retail_price': 1799,
-                        'imgUrl': './assets/womens_clothing/western/img4.jpg'
+                        'imgUrl': './assets/womens_clothing/western/img4.jpg',
+                        'stock': 'In stock'
                       }
                     ],
         ethnic_wear: [
@@ -53,6 +57,11 @@ export class WomenComponent implements OnInit {
                       }
                     ]
   }];
+
+  imgStyle = {
+    'width' : '180px',
+    'height': '250px'
+  }
 
   constructor() { }
 
