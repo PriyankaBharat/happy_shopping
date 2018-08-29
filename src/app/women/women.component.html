@@ -1,0 +1,36 @@
+
+<div class="classInnerContainer">
+  <ul>
+    <li *ngFor = "let cloth of wClothing">
+      <div class="col-md-3 classCard1" *ngFor = "let fWear of cloth.western_wear" style="width: 23%;height:370px;margin-bottom: 10px;">
+            <div class="classImage">
+                <img [src]='fWear.imgUrl' alt="Avatar" [ngStyle]="{'width':'180px','height':'250px'}">
+            </div>
+            <div class="classContainer">
+              <div><a href= '#'>{{fWear.product_name}}</a></div>
+              <div class="classPrice">{{fWear.price | currency:'INR'}}</div>
+              <div class="classRetailPrice">{{fWear.retail_price | currency:'INR'}}</div>
+            </div>
+      </div>
+      &nbsp;
+    </li>
+  </ul>
+</div>
+
+<div class="classInnerContainer">
+  <ul>
+    <li *ngFor = "let cloth of wClothing">
+      <div class="col-md-3 classCard1" *ngFor = "let eWear of cloth.ethnic_wear" style="width: 23%;height:370px;margin-bottom: 10px;">
+        <div class="classImage">
+            <img [src]='eWear.imgUrl' alt="Avatar" [ngStyle]="{'width':'180px','height':'250px'}">
+        </div>
+        <div class="classContainer">
+          <div class="classProductName"><a href= '#'>{{eWear.product_name}}</a></div>
+          <div class="classPrice">{{eWear.price | currency:'INR'}}</div>
+          <div class="classRetailPrice">{{eWear.retail_price | currency:'INR'}}</div>
+        </div>
+      </div>
+      &nbsp;
+    </li>
+  </ul>
+</div>

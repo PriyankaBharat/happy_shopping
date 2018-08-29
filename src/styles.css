@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+  font-family: '"Amazon Ember",Arial,sans-serif';
+}
+.classCard{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 18%;
+  display:inline-block;
+  margin-right: 20px;
+}
+.classCard1{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-right: 10px;
+}
+
+.classCard1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.classContainer{
+  padding: 2px 16px;
+}
+.classCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+li {
+  display: inline;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.classInnerContainer{
+  padding-left: 5%;
+  /* background-color: #fbf9f9; */
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.classHeading{
+  text-align: center;
+}
+a {
+  text-decoration: none !important;
+}
+.classRetailPrice{
+  text-decoration: line-through;
+  font-size: 12px;
+}
+.classPrice{
+  color: #b12704;
+  font-weight: 700;
+  font-size: 14px;
+}
+.classProductName{
+  font-size: 15px;
+}
+.classImage{
+  margin-bottom: 15px;
+}
+

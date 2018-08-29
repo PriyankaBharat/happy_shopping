@@ -1,0 +1,17 @@
+<div class="classInnerContainer">
+  <ul>
+    <li *ngFor = "let item of houseDecor">
+      <div class="col-md-3 classCard1" *ngFor = "let painting of item.paintings" style="width: 23%;height:370px;margin-bottom: 10px;">
+            <div class="classImage">
+                <img [src]='painting.imgUrl' alt="Avatar" [ngStyle]="{'width':'205px','height':'185px'}">
+            </div>
+            <div class="classContainer">
+              <div><a href= '#'>{{painting.product_name}}</a></div>
+              <div class="classPrice">{{painting.price | currency:'INR'}}</div>
+              <div class="classRetailPrice">{{painting.retail_price | currency:'INR'}}</div>
+            </div>
+      </div>
+      &nbsp;
+    </li>
+  </ul>
+</div>

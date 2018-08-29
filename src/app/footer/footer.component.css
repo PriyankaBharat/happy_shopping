@@ -1,0 +1,40 @@
+/* Add a black background color to the top navigation */
+.classFooter {
+  background-color:#232F3E;
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+}
+
+.classImgSocialIcon{
+  width:35px;
+  margin-right:10px;
+}
+
+.classFooterHeading{
+  color: #878787;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Style the links inside the navigation bar */
+.footer a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.footer a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.footer a.active {
+  background-color: #4CAF50;
+  color: white;
+}
